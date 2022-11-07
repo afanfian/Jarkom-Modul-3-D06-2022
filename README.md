@@ -36,7 +36,11 @@ Muhamad Ridho Pratama       | 5025201186
   - [Soal 4](#soal-4)
     - [Jawab](#jawab-4)
   - [Soal 5](#soal-5)
-
+    - [Jawab](#jawab-5)
+  - [Soal 6](#soal-6)
+    - [Jawab](#jawab-6)
+  - [Soal 7](#soal-7)
+    - [Jawab](#jawab-7)
 ## Konfigurasi Awal
 
   {Gambar Topologi}
@@ -195,4 +199,67 @@ Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.10 - [prefix
 
 2. Jalankan command `service isc-dhcp-server restart`
 
-## Soal 5
+## Soal 5  
+Client mendapatkan DNS dari WISE dan client dapat terhubung dengan internet melalui DNS tersebut.  
+
+### Jawab  
+1. Pada WISE, edit file `/etc/bind/named.conf.options` dengan menambahkan
+
+```
+    forwarders {
+        "192.168.122.1";
+    };
+
+    allow-query{any;};
+```
+
+dan mengkomen bagian
+
+```
+    // dnssec-validation auto;
+```  
+
+   {screenshot file /etc/dhcp/dhcpd.conf.options di Westalis}
+
+2. kemudian jalankan command `service bind9 restart`  
+3. Pada Westalis, edit file `/etc/dhcp/dhcpd.conf` dengan menambahkan baris `option domain-name-servers "10.18.2.2"` pada `subnet 10.18.1.0` dan `subnet 10.18.3.0`  
+## Soal 6  
+Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 5 menit sedangkan pada client yang melalui Switch3 selama 10 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 115 menit.  
+
+### Jawab  
+Pada Westalis, edit file `/etc/dhcp/dhcpd.conf` dengan menambahkan baris ini pada `subnet 10.18.1.0`
+
+```
+        default-lease-time 300;
+        max-lease-time 6900;
+```
+
+
+dan menambahkan baris ini pada `subnet 10.18.3.0`
+
+```
+        default-lease-time 600;
+        max-lease-time 6900;
+```  
+
+{screenshot file /etc/dhcp/dhcpd.conf di Westalis}
+
+## Soal 7  
+Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP [prefix IP].3.13  
+
+### Jawab  
+1. Pada Westalis, edit file `/etc/dhcp/dhcpd.conf` dengan menambahkan baris ini
+
+```
+    host Eden {
+        hardware ethernet "hardware address Eden";
+        fixed-address 10.18.3.13;
+    }
+```  
+
+{screenshot file /etc/dhcp/dhcpd.conf di Westalis}
+
+2. Lalu jalankan command `service isc-dhcp-server restart`  
+3. Kemudian tambahkan `hwaddress ether "hardware address Eden"` pada `/etc/network/interfaces` agar hwaddress tidak berubah-ubah ketika project direstart atau diexport
+
+{screenshot file /etc/network/interfaces di Eden}
