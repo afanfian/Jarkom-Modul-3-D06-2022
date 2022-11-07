@@ -10,7 +10,7 @@ Rere Arga Dewanata          | 5025201078
 Muhamad Ridho Pratama       | 5025201186
 
 ## Daftar Isi  
-- [Laporan Resmi Praktikum Modul 2 Jarkom Kelompok D06](#laporan-resmi-praktikum-modul-3-jarkom-kelompok-d06)
+- [Laporan Resmi Praktikum Modul 3 Jarkom Kelompok D06](#laporan-resmi-praktikum-modul-3-jarkom-kelompok-d06)
     - [Anggota Kelompok:](#anggota-kelompok)
   - [Daftar Isi](#daftar-isi)
   - [Soal 1](#soal-1)
@@ -21,3 +21,5 @@ Muhamad Ridho Pratama       | 5025201186
   - [Soal 6](#soal-6)
   - [Soal 7](#soal-7)
   - [Kendala Pengerjaan](#kendala-pengerjaan)
+
+## Soal 1   
