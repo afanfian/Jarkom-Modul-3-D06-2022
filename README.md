@@ -41,6 +41,16 @@ Muhamad Ridho Pratama       | 5025201186
     - [Jawab](#jawab-6)
   - [Soal 7](#soal-7)
     - [Jawab](#jawab-7)
+  - [Soal 8](#soal-8)
+    - [Jawab](#jawab-8)
+  - [Soal 9](#soal-9)
+    - [Jawab](#jawab-9)
+  - [Soal 10](#soal-10)
+    - [Jawab](#jawab-10)
+  - [Soal 11](#soal-11)
+    - [Jawab](#jawab-11)
+  - [Soal 12](#soal-12)
+    - [Jawab](#jawab-12)
 ## Konfigurasi Awal
 
   {Gambar Topologi}
