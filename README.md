@@ -485,13 +485,13 @@ Adapun pada hari dan jam kerja sesuai nomor (8), client hanya dapat mengakses do
 #### Akses dengan klien
 
 1. Dengan menggunakan salah satu client, ini adalah tampilan saat mengakses loid-work.com dan franky-work.com pada jam kerja:
-   - loid-work.com
-      ![Soal9_SSS_ping loid-work](https://user-images.githubusercontent.com/70679432/201641498-e9227ea3-dcd4-4b94-ae45-3a5882a4fa0a.jpg)
-      ![Soal9_SSS_lynx loid-work](https://user-images.githubusercontent.com/70679432/201641531-792c0742-6430-4203-9efb-dd8670d9ab5b.jpg)
+   - loid-work.com  
+      ![Soal9_SSS_ping loid-work](https://user-images.githubusercontent.com/70679432/201641498-e9227ea3-dcd4-4b94-ae45-3a5882a4fa0a.jpg)  
+      ![Soal9_SSS_lynx loid-work](https://user-images.githubusercontent.com/70679432/201641531-792c0742-6430-4203-9efb-dd8670d9ab5b.jpg)  
       
-   - franky-work.com
-     ![Soal9_SSS_ping franky-work](https://user-images.githubusercontent.com/70679432/201641586-b3f4e3a7-55ac-454a-9589-481bfacac560.jpg)
-     ![Soal9_SSS_lynx franky-work](https://user-images.githubusercontent.com/70679432/201641615-06dd9005-33ec-4d6d-844e-dec9c3254f31.jpg)
+   - franky-work.com  
+     ![Soal9_SSS_ping franky-work](https://user-images.githubusercontent.com/70679432/201641586-b3f4e3a7-55ac-454a-9589-481bfacac560.jpg)  
+     ![Soal9_SSS_lynx franky-work](https://user-images.githubusercontent.com/70679432/201641615-06dd9005-33ec-4d6d-844e-dec9c3254f31.jpg)  
      
 ## Soal 10  
 Saat akses internet dibuka, client dilarang untuk mengakses web tanpa HTTPS. (Contoh web HTTP: http://example.com)
@@ -541,11 +541,11 @@ Saat akses internet dibuka, client dilarang untuk mengakses web tanpa HTTPS. (Co
    ```
 2. Restart squid dengan `service squid restart`
 
-3. Dengan menggunakan client, saat akses internet dibuka,
-   - Berikut adalah tampilan saat mengakses website dengan protokol http:
-      {screenshot lynx akses http://example.com}
-   - Berikut adalah tampilan saat mengakses website dengan protokol https:
-      {screenshot `curl https://example.com -k`}
+3. Dengan menggunakan client, saat akses internet dibuka,  
+   - Berikut adalah tampilan saat mengakses website dengan protokol http:  
+      ![Soal10_SSS_lynx example com](https://user-images.githubusercontent.com/70679432/201643171-6c3ce340-fb88-4ef2-9ab5-49264edad0a8.jpg)    
+   - Berikut adalah tampilan saat mengakses website dengan protokol https:  
+      ![Soal10_SSS_curl https example com](https://user-images.githubusercontent.com/70679432/201643214-d0d7e184-8eef-4602-8f75-5060fffc039b.jpg)  
 
 ## Soal 11  
 
