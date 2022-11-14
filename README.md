@@ -58,6 +58,7 @@ Muhamad Ridho Pratama       | 5025201186
       - [Perbandingan kecepatan](#perbandingan-kecepatan)
   - [Soal 12](#soal-12)
     - [Jawab](#jawab-13)
+  - [Kendala Pengerjaan](#kendala-pengerjaan)
 ## Konfigurasi Awal
 
   ![Gambar Topologi](https://user-images.githubusercontent.com/70679432/201629687-d3f723e0-f585-4c25-b47a-52c0d1a14943.jpg)  
@@ -679,3 +680,7 @@ Pada client, kita tes kecepatan internetnya dengan menggunakan proxy:
 
 - Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB pada hari libur
    ![Soal12_SSS_wget hari libur](https://user-images.githubusercontent.com/70679432/201646542-209b82e8-372e-40f8-a3c8-7365a16eecc1.jpg)  
+## Kendala Pengerjaan
+   - Materi di github tidak ada konfigurasi dhcp relay.
+   - Kesusahan cara mengatur bandwith 128kb.
+   - Kesusahan cara mengatur aktif dan tidak aktif penggunaan internet atau materi proxy.
