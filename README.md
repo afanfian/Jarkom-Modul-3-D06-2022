@@ -60,7 +60,7 @@ Muhamad Ridho Pratama       | 5025201186
     - [Jawab](#jawab-13)
 ## Konfigurasi Awal
 
-  {Gambar Topologi}
+  ![Gambar Topologi](https://user-images.githubusercontent.com/70679432/201629687-d3f723e0-f585-4c25-b47a-52c0d1a14943.jpg)  
   Loid bersama Franky berencana membuat peta tersebut.
 
   ### Konfigurasi Tiap-tiap node
@@ -142,7 +142,7 @@ Loid bersama Franky berencana membuat peta tersebut dengan kriteria sebagai DNS 
 
 4. Pada Westalis, install isc-dhcp-server dengan menjalankan command `apt-get update` lalu `apt-get install isc-dhcp-server -y`
 5. Lalu, setting variabel `INTERFACES` pada file `/etc/default/isc-dhcp-server` dengan menambahkan `eth0`
-{screenshot file /etc/default/isc-dhcp-server}
+![Soal1_Westalis_Screenshot isc-dhcp-server](https://user-images.githubusercontent.com/70679432/201629845-8ae4962e-ac3e-479a-90b8-5fc7de462bfe.jpg)  
 
 #### Berlint
 
@@ -184,12 +184,12 @@ Pastikan konfigurasi pada setiap node client (SSS, Garden, Eden, NewstonCastle, 
       option routers 10.18.1.1;
       option broadcast-address 10.18.1.255;
       option domain-name-servers 10.18.2.2;
-      default-lease-time 360;
-      max-lease-time 7200;
+      default-lease-time 300;
+      max-lease-time 6900;
    }
    ```
 
-  {screenshot file /etc/dhcp/dhcpd.conf di Westalis}
+  ![Soal3_Westalis_SS dhcpd conf](https://user-images.githubusercontent.com/70679432/201629960-e29ca118-fdbc-4a5d-b5e2-2ea3354e6a93.jpg)
 
 2. Jalankan command `service isc-dhcp-server restart`
 
@@ -207,13 +207,12 @@ Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.10 - [prefix
       option routers 10.18.3.1;
       option broadcast-address 10.18.3.255;
       option domain-name-servers 10.18.2.2;
-      default-lease-time 360;
-      max-lease-time 7200;
+      default-lease-time 600;
+      max-lease-time 6900;
    }
    ```
-
-   {screenshot file /etc/dhcp/dhcpd.conf di Westalis}
-
+  ![Soal4_Westalis_SS dhcpd conf](https://user-images.githubusercontent.com/70679432/201630364-9c2474df-e55a-4ecf-84ea-60115a625425.jpg)  
+  
 2. Jalankan command `service isc-dhcp-server restart`
 
 ## Soal 5  
@@ -236,7 +235,7 @@ dan mengkomen bagian
     // dnssec-validation auto;
 ```  
 
-   {screenshot file /etc/dhcp/dhcpd.conf.options di Westalis}
+   ![Soal5_WISE_SS named conf options](https://user-images.githubusercontent.com/70679432/201630457-5eb50174-63f3-4140-b788-e3ae4d2ab736.jpg)  
 
 2. kemudian jalankan command `service bind9 restart`  
 3. Pada Westalis, edit file `/etc/dhcp/dhcpd.conf` dengan menambahkan baris `option domain-name-servers "10.18.2.2"` pada `subnet 10.18.1.0` dan `subnet 10.18.3.0`  
@@ -259,7 +258,8 @@ dan menambahkan baris ini pada `subnet 10.18.3.0`
         max-lease-time 6900;
 ```  
 
-{screenshot file /etc/dhcp/dhcpd.conf di Westalis}
+![Soal6_Westalis_SS dhcpd conf](https://user-images.githubusercontent.com/70679432/201630530-7c98cf6e-6426-4270-8513-40facf056236.jpg)
+d2ab736.jpg)  
 
 ## Soal 7  
 Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran informasi dengan alamat IP yang tetap dengan IP [prefix IP].3.13  
@@ -275,12 +275,12 @@ Loid dan Franky berencana menjadikan Eden sebagai server untuk pertukaran inform
     }
 ```  
 
-{screenshot file /etc/dhcp/dhcpd.conf di Westalis}
+![Soal7_Westalis_SS dhcpd conf](https://user-images.githubusercontent.com/70679432/201630567-19dbad2c-2323-4389-930c-253e933573c3.jpg)  
 
 3. Lalu jalankan command `service isc-dhcp-server restart`  
 4. Kemudian, di Eden, tambahkan `hwaddress ether <hardware address Eden>` pada `/etc/network/interfaces` agar hwaddress tidak berubah-ubah ketika project di-restart atau di-export
 
-{screenshot file /etc/network/interfaces di Eden}
+![Soal7_Eden_SS interface](https://user-images.githubusercontent.com/70679432/201630614-a02f3506-c384-4422-947c-95fb695d1a0e.jpg)
 
 ## Persiapan Soal 8 - 12
 
