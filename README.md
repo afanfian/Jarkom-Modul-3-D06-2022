@@ -613,13 +613,13 @@ Agar menghemat penggunaan, akses internet dibatasi dengan kecepatan maksimum 128
 
 Pada client, kita tes kecepatan internetnya:
 
-- Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB saat tidak menggunakan proxy
-   {screenshot donlot pake wget}
+- Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB saat tidak menggunakan proxy  
+   ![Soal11_SSS_wget tanpa proxy](https://user-images.githubusercontent.com/70679432/201645222-85983252-8466-4d5d-b98e-ecd6ad74640f.jpg)  
 
 - Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB saat menggunakan proxy
-   {screenshot donlot pake wget}
-
-## Soal 12
+   ![Soal11_SSS_wget dengan proxy](https://user-images.githubusercontent.com/70679432/201645323-7d67360d-2494-4edf-ac39-3b2d44739d2d.jpg)  
+   
+## Soal 12  
 
 Setelah diterapkan, ternyata peraturan nomor (11) mengganggu produktifitas saat hari kerja, dengan demikian pembatasan kecepatan hanya diberlakukan untuk pengaksesan internet pada hari libur  
 
