@@ -675,7 +675,7 @@ Setelah diterapkan, ternyata peraturan nomor (11) mengganggu produktifitas saat 
 Pada client, kita tes kecepatan internetnya dengan menggunakan proxy:
 
 - Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB pada hari kerja
-   {screenshot donlot pake wget}
+   ![Soal12_SSS_wget hari kerja](https://user-images.githubusercontent.com/70679432/201646518-8a1fcbfb-87da-4915-95c2-33fd146ce125.jpg)  
 
 - Berikut adalah tampilan kecepatan internet saat mengunduh file sebesar 100MB pada hari libur
-   {screenshot donlot pake wget}
+   ![Soal12_SSS_wget hari libur](https://user-images.githubusercontent.com/70679432/201646542-209b82e8-372e-40f8-a3c8-7365a16eecc1.jpg)  
