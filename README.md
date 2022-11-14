@@ -374,10 +374,9 @@ Client hanya dapat mengakses internet diluar (selain) hari & jam kerja (senin-ju
 #### Percobaan pada klien
 
 - Berikut adalah tampilan saat mengakses **http://example.com** di hari dan jam kerja
-   {screenshot akses example.com di hari dan jam kerja}
+   ![Soal8_SSS_Akses example ketika jam kerja](https://user-images.githubusercontent.com/70679432/201637116-37679a16-5a09-4b57-81e8-088844071b04.jpg)  
 - Berikut adalah tampilan saat mengakses **http://example.com** di luar hari dan jam kerja
-   {screenshot akses example.com di luar hari dan jam kerja}
-   
+   ![Soal8_SSS_Akses example diluar jam kerja](https://user-images.githubusercontent.com/70679432/201637138-85f557a7-a9b0-48a6-b20f-6a2ca8c25cef.jpg)
 
 ## Soal 9  
 Adapun pada hari dan jam kerja sesuai nomor (8), client hanya dapat mengakses domain loid-work.com dan franky-work.com (IP tujuan domain dibebaskan)  
